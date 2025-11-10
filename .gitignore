@@ -10,6 +10,10 @@
 /src/Builds/
 /src/Logs/
 /src/[Uu]ser[Ss]ettings/
+/src/.idea/
+/src/Assets/_Recovery/
+/src/Assets/_Recovery.meta
+
 *.log
 
 # By default unity supports Blender asset imports, *.blend1 blender files do not need to be commited to version control.

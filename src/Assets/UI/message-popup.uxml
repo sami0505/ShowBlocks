@@ -1,0 +1,15 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement name="MessagePanel" style="flex-grow: 1; position: absolute; align-items: center; left: initial; right: auto; width: 100%; height: 100%; justify-content: center; background-color: rgba(0, 0, 0, 0.65); transition-property: visibility; transition-duration: 0.25s;">
+        <ui:VisualElement name="BoxPanel" style="flex-grow: 1; background-size: 100% 100%; width: 40%; height: 100%; margin-top: 15%; margin-bottom: 15%; align-content: flex-start;">
+            <ui:VisualElement name="TitlePanel" style="flex-grow: 1; height: 15%; flex-direction: row; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                <ui:Label text="Warning: Error occured!" name="Title" style="background-color: rgb(255, 255, 255); width: 100%; border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); justify-content: flex-start; -unity-text-align: middle-left; font-size: 12px; -unity-text-outline-width: 0; color: rgb(0, 0, 0); -unity-text-outline-color: rgb(0, 0, 0); -unity-font-definition: url(&quot;project://database/Assets/UI%20Toolkit/UnityThemes/UnityDefaultRuntimeTheme.tss?fileID=2230732570650464555&amp;guid=3809e6b044a472b4bb4de5ebd4361bdf&amp;type=3#NotInter-Regular&quot;); text-shadow: 1px 1px 0 rgb(255, 255, 255); margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="ContentPanel" style="flex-grow: 1; height: 85%; background-color: rgb(255, 255, 255); border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; margin-right: 0; margin-left: 0; margin-top: 0; margin-bottom: 0;">
+                <ui:Label text="Something went wrong!" name="MessageContent" style="-unity-text-align: middle-center; height: 80%;" />
+                <ui:VisualElement name="MessageButtonsPanel" style="flex-grow: 1; padding-top: 0%; padding-right: 5%; padding-bottom: 0%; padding-left: 5%; flex-direction: row; justify-content: center;">
+                    <ui:Button text="OK" name="OKButton" style="max-width: 40%; min-width: auto; background-color: rgb(169, 169, 169); color: rgb(255, 255, 255); font-size: 15px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-width: 2px; border-right-width: 2px; border-bottom-width: 2px; border-left-width: 2px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

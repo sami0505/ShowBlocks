@@ -40,11 +40,11 @@ Level Sets:
 - 2: `WHERE` (`INT`)
 - 3: `WHERE` (`TEXT`, `LIKE`)
 - 4: `WHERE` (`NULL`, Multiple conditions using `AND`, `OR`, (`NOT`??))
-- 5: ORDER BY, SELECT DISTINCT, SELECT LIMIT
-- 6: Primary keys and DELETE
-- 7: INSERT (and UPDATE??)
-- 7: Foreign Keys and JOIN
-- 8: DROP (can be used as punchline)
+- 5: `ORDER BY`, `SELECT DISTINCT`, `SELECT LIMIT`
+- 6: Primary keys and `DELETE`
+- 7: `INSERT`
+- 7: Foreign Keys and `JOIN`
+- 8: `DROP` (can be used as punchline)
 
 ## Design Diagrams
 

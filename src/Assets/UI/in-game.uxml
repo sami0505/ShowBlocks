@@ -1,0 +1,33 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/in-game.uss?fileID=7433441132597879392&amp;guid=5c3953aaa328a89428d5960d545bc4ce&amp;type=3#in-game" />
+    <ui:VisualElement name="Panel" enabled="true" class="panel" style="flex-grow: 1; flex-direction: row; align-content: auto; justify-content: flex-start; align-items: stretch; transition-property: visibility; transition-duration: 0.25s; transition-timing-function: ease; transition-delay: 0s;">
+        <ui:VisualElement name="LeftPanel" style="flex-grow: 1; margin-left: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; width: 25%; flex-basis: initial; align-self: auto; padding-top: 1%; padding-right: 1%; padding-bottom: 1%; padding-left: 1%;">
+            <ui:ScrollView name="StructurePanel" style="height: 60%; background-color: rgb(0, 10, 15); border-top-left-radius: 5%; border-top-right-radius: 5%; border-bottom-right-radius: 5%; border-bottom-left-radius: 5%; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(0, 255, 0); border-right-color: rgb(0, 255, 0); border-top-color: rgb(0, 255, 0); border-bottom-color: rgb(0, 255, 0);" />
+            <ui:VisualElement name="CommandPanel" data-source="project://database/Assets/UIDataHandler.asset?fileID=11400000&amp;guid=eddec85bdb62fdc4a86bd00d8539b1ad&amp;type=2#UIDataHandler" style="flex-grow: 1; height: 40%; margin-top: 5%; margin-right: 0%; margin-bottom: 0%; margin-left: 0%; background-color: rgb(0, 10, 15); border-top-left-radius: 5%; border-top-right-radius: 5%; border-bottom-right-radius: 5%; border-bottom-left-radius: 5%; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-left-color: rgb(0, 255, 0); border-right-color: rgb(0, 255, 0); border-top-color: rgb(0, 255, 0); border-bottom-color: rgb(0, 255, 0);">
+                <ui:TextField placeholder-text="Type Query Here..." hide-placeholder-on-focus="true" multiline="true" name="CommandInput" style="color: rgb(255, 0, 0); flex-direction: column; font-size: 11px; -unity-background-image-tint-color: rgba(0, 0, 0, 0); flex-wrap: nowrap; white-space: pre; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; justify-content: space-between; align-items: flex-start;">
+                    <Bindings>
+                        <ui:DataBinding property="value" update-trigger="WhenDirty" data-source-path="query" binding-mode="ToSource" />
+                    </Bindings>
+                </ui:TextField>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="MidPanel" style="flex-grow: 1; align-content: auto; align-self: auto; width: 50%; padding-left: 5%; padding-right: 5%;">
+            <ui:VisualElement style="flex-grow: 1; flex-direction: column-reverse;">
+                <ui:Label text="Lorem" name="GoalText" data-source-type="GameManager, Assembly-CSharp" data-source="project://database/Assets/TextMesh%20Pro/Resources/Style%20Sheets/Default%20Style%20Sheet.asset?fileID=11400000&amp;guid=f952c082cb03451daed3ee968ac6c63e&amp;type=2#Default Style Sheet" style="-unity-text-align: upper-center; margin-bottom: 5%; white-space: normal; font-size: 18px; -unity-font-style: normal;">
+                    <Bindings>
+                        <ui:DataBinding property="text" data-source-path="levelGoalText" binding-mode="ToTarget" data-source="project://database/Assets/UIDataHandler.asset?fileID=11400000&amp;guid=eddec85bdb62fdc4a86bd00d8539b1ad&amp;type=2#UIDataHandler" />
+                    </Bindings>
+                </ui:Label>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="RightPanel" style="flex-grow: 1; width: 25%; padding-top: 1%; padding-right: 1%; padding-bottom: 1%; padding-left: 1%;">
+            <ui:VisualElement name="SettingsPanel" style="flex-grow: 1; height: 65%; align-items: auto;">
+                <ui:Button icon-image="project://database/Assets/settings.png?fileID=2800000&amp;guid=8d7202fe50abe0949b6114d1b5e51255&amp;type=3#settings" name="SettingsButton" style="width: 50px; height: 50px; padding-top: 3%; padding-right: 3%; padding-bottom: 3%; padding-left: 3%; transition-property: scale; transition-timing-function: ease-in-out; transition-duration: 0.35s; border-top-left-radius: 25%; border-top-right-radius: 25%; border-bottom-right-radius: 25%; border-bottom-left-radius: 25%;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="RunPanel" style="flex-grow: 1; height: 10%;">
+                <ui:Button text="Run Query" name="RunButton" style="border-top-left-radius: 20px; border-top-right-radius: 20px; border-bottom-right-radius: 20px; border-bottom-left-radius: 20px; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 0.25s; border-left-width: 1px;" />
+            </ui:VisualElement>
+            <ui:VisualElement name="HintPanel" style="flex-grow: 1; height: 25%;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
