@@ -15,10 +15,17 @@ Robustly handle errors and learn from your mistakes!
 
 ![Error handle](/img/exp3.gif)
 
-Write increasingly complex queries, such as SELECT:
+Write increasingly complex queries, using commands such as SELECT:
 
 ![select](/img/exp4.gif)
 
+DELETE:
+
+![delete](/img/exp5.gif)
+
+And INSERT INTO:
+
+![insert](/img/exp6.gif)
 
 The currently available version of ShowBlocks is a proof of concept, as there are a lot of areas still being worked on, in order to make ShowBlocks the best possible game it can be!
 
